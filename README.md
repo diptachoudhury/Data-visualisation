@@ -4,8 +4,7 @@
 ![Dashboard Screenshot](./public/Home2.png)
 ## Live Demo
 
-[Explore the Dashboard Live](https://vercel.com/diptas-projects-b50f0d5d/data-visualisation)
-
+[Explore the Dashboard Live](https://data-visualisation-rho.vercel.app/)
 
 A modern analytics dashboard built with **React**, **Typescript**, **Tailwind CSS**, and **Recharts** for data visualization. Features a dark theme UI with interactive charts, variable controls, and secure authentication powered by **Auth0**. State management handled by **Redux Toolkit (RTK)** for optimal performance.
 

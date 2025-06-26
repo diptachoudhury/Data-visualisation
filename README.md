@@ -18,7 +18,7 @@ A modern analytics dashboard built with **React**, **Typescript**, **Tailwind CS
 git clone https://github.com/yourusername/analytics-dashboard.git
 cd analytics-dashboard
 
-### 2. Install dependencies
+### 2. Install dependencies 
 npm install
 
 ### 3. Environment Variables

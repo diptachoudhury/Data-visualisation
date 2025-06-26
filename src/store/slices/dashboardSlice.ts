@@ -34,6 +34,7 @@ const initialState: ChartState = {
   activeVariables: [],
 };
 
+// Multipliers specific to each data point name for non uniform chart distr
 const itemSpecificStaticMultipliers: Record<string, number> = {
   'Apr': 1.05,
   'May': 0.95,
@@ -50,12 +51,14 @@ const chartSlice = createSlice({
   initialState,
   reducers: {
     applyVariables: (state, action: PayloadAction<string[]>) => {
+      // Sort and store the active variables from the payload
       state.activeVariables = [...action.payload].sort(); 
 
       const totalMultiplier = state.activeVariables.reduce((acc, currVar) => {
         return acc * getMultiplierForVariable(currVar);
       }, 1);
 
+       // Map over the original data to create a new modified data array
       state.modifiedData = state.originalData.map(item => {
         const staticItemMultiplier = itemSpecificStaticMultipliers[item.name] || 1;
 
@@ -74,6 +77,7 @@ const chartSlice = createSlice({
   },
 });
 
+// Helper function to get the multiplier for a given variable.
 function getMultiplierForVariable(variable: string): number {
   const multipliers: Record<string, number> = {
     'CO2 Emission': 0.8,

@@ -1,4 +1,3 @@
-// app/store.ts
 import { configureStore } from '@reduxjs/toolkit';
 import chartReducer from './slices/dashboardSlice';
 

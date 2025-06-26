@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
 const SideNav = () =>{
   const [activeIcon, setActiveIcon] = useState("home");
 return (
+  // Position fixed to avoif overflow scroll
     <div className="w-14 bg-black  flex flex-col items-center px-4 fixed left-0 h-full z-30">
         <button className="p-2 mt-4 text-[#858882] hover:text-white">
           <Menu size={16} />

@@ -50,6 +50,7 @@ const TopNav = () => {
         />
       </div>
         <div>
+        {/* Conditionally Render Login and logout with user name   */}
       {!isAuthenticated ? (
         <button onClick={() => loginWithRedirect()} className="flex items-center p-1 px-2 rounded-lg text-xs font-normal
                            text-[#C9FF3B] border border-[#C9FF3B]">

@@ -6,10 +6,10 @@ const DynamicPage = () => {
 
 
   const pageTitle = slug || "Page";
-
+ //Dynaimic content for sideNav Route
   return (
     <div className="flex items-center justify-center h-full">
-      <h1 className="text-2xl text-white">This is {pageTitle} Page</h1>
+      <h1 className="text-2xl text-white">This is {pageTitle} Page</h1> 
     </div>
   );
 };

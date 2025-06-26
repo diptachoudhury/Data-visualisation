@@ -15,7 +15,7 @@ A modern analytics dashboard built with **React**, **Typescript**, **Tailwind CS
 
 ### 1. Clone the repository
 
-git clone https://github.com/yourusername/analytics-dashboard.git
+git clone https://github.com/diptachoudhury/Data-visualisation.git
 cd analytics-dashboard
 
 ### 2. Install dependencies 
@@ -61,7 +61,7 @@ npm run dev
 ##  Localdevelopment instructions
 ### 1. Clone the repository
 
-git clone https://github.com/yourusername/analytics-dashboard.git
+git clone https://github.com/diptachoudhury/Data-visualisation.git
 cd analytics-dashboard
 
 ### 2. Install dependencies

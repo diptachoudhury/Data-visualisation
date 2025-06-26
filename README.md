@@ -1,69 +1,75 @@
-# React + TypeScript + Vite
+# Data Visualisation Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Dashboard Screenshot](./public/Home3.png) 
+![Dashboard Screenshot](./public/Home2.png)
 
-Currently, two official plugins are available:
+A modern analytics dashboard built with **React**, **Typescript**, **Tailwind CSS**, and **Recharts** for data visualization. Features a dark theme UI with interactive charts, variable controls, and secure authentication powered by **Auth0**. State management handled by **Redux Toolkit (RTK)** for optimal performance.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
+- [Setup](#-setup)
+- [Features](#-features)
+- [Technical decisions and trade offs](#-technical-decisions-and-trade-offs)
+- [Limitations](#-limitations)
+- [Time Spent](#-time-spent)
+## 🚀 Setup
 
-## Expanding the ESLint configuration
+### 1. Clone the repository
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+git clone https://github.com/yourusername/analytics-dashboard.git
+cd analytics-dashboard
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 2. Install dependencies
+npm install
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### 3. Environment Variables
+VITE_AUTH0_DOMAIN=dev-801f84oe8budwof1.us.auth0.com
+VITE_AUTH0_CLIENT_ID=ggQyaiPmEXBIPQNSjtjb0joUj6bmrwMK
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 4. Run the app 
+npm run dev
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ✨ Features
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Core Functionality
+- Interactive charts (Line, Bar, Area) with Recharts
+- Responsive layout (mobile/tablet/desktop)
+- Slide-Over Variable editing Card Interaction
+- Data Point Hover Interaction
+- Variable Selection Interaction [with RTK]
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### UI Components
+- Side navigation panel
+- Top navigation bar
+- Expandable variable editor
+- KPI cards with trend indicators
+- Responsive chart containers
+
+
+## Technical decisions and trade offs
+
+- Auth0 over Firebase	Enterprise security	More complex setup
+- RTK over Context	Performance optimization	Boilerplate code
+- Recharts over D3	
+
+## Limitations
+ - The chart data is static, have added multpliers on each factor which change the data.
+ 
+## Time Spent
+- 5 hrs 
+
+
+##  Localdevelopment instructions
+### 1. Clone the repository
+
+git clone https://github.com/yourusername/analytics-dashboard.git
+cd analytics-dashboard
+
+### 2. Install dependencies
+npm install
+
+### 3. Environment Variables
+VITE_AUTH0_DOMAIN=dev-801f84oe8budwof1.us.auth0.com
+VITE_AUTH0_CLIENT_ID=ggQyaiPmEXBIPQNSjtjb0joUj6bmrwMK
+
+### 4. Run the app 
+npm run dev

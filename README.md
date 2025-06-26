@@ -1,7 +1,11 @@
-# Data Visualisation Dashboard
+# Data Visualisation Dashboard 
 
 ![Dashboard Screenshot](./public/Home3.png) 
 ![Dashboard Screenshot](./public/Home2.png)
+## Live Demo
+
+[Explore the Dashboard Live](https://vercel.com/diptas-projects-b50f0d5d/data-visualisation)
+
 
 A modern analytics dashboard built with **React**, **Typescript**, **Tailwind CSS**, and **Recharts** for data visualization. Features a dark theme UI with interactive charts, variable controls, and secure authentication powered by **Auth0**. State management handled by **Redux Toolkit (RTK)** for optimal performance.
 
@@ -53,6 +57,7 @@ npm run dev
 
 ## Limitations
  - The chart data is static, have added multpliers on each factor which change the data.
+ - auth might not work if deployed on local, Allowed web origins only include the deployed url.
  
 ## Time Spent
 - 5 hrs 
